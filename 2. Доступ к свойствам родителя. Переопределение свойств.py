@@ -23,29 +23,9 @@ class Vehicle:
         else:
             self.__color = new_color
 
-        #for color in self.__COLOR_VARIANTS:
-        #    if new_color.lower() in color.lower():
-        #        print(f'Нельзя сменить цвет на {new_color}')
-        #self.__color = new_color
-
-        # new_color_lower = new_color.lower()
-        # for color in self.__COLOR_VARIANTS:
-        #    if new_color_lower == color.lower():
-        #        self.__color = color
-        #        break
-        # else:
-        #    print(f'Нельзя сменить цвет на {new_color}')
-
-             # print(f'Нельзя сменить цвет на {new_color}')
-
-# Метод set_color - принимает аргумент new_color(str), меняет цвет __color на new_color, если он есть в списке __COLOR_VARIANTS,
-# в противном случае выводит на экран надпись: "Нельзя сменить цвет на <новый цвет>".
-
 class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
 
-
-# Текущие цвета __COLOR_VARIANTS = ['Жёлтый', 'Серебряный', 'Чёрный', 'Белый', 'Зелёный']
 vehicle1 = Sedan('Fedos', 'Toyota Mark II', 'Серебряный', 500)
 vehicle1.print_info()
 
